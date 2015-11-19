@@ -10,7 +10,7 @@ This code used to be a part of a larger project that was split into three smalle
 
 * For installation with [localrepo](https://github.com/kumarshantanu/lein-localrepo):
   * First download the source code, then cd into the source and execute:
-    * `lein clean ; lein jar ; lein localrepo install target/*.jar no.ifixit/clexec "1.0.0"`
+    * `lein clean ; lein uberjar ; lein localrepo install target/*-standalone.jar no.ifixit/clexec "1.0.0"`
   * Then you can require the library into clojure as you would any other library:
     * `(require '[clexec.core :refer [run-commands list-pids kill]])`
 
