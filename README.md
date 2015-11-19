@@ -16,9 +16,14 @@ This code used to be a part of a larger project that was split into three smalle
 
 ## Usage
 
+### Application
+
 * Jar:
   * `java -jar target/clexec-*.jar 'sleep 60; sleep 60'`, execute commands seperated by ";", then prints out the pid of the jar. Each commands is executed in the background
   * `# kill -USR2 jar-pid`, execute from a shell. Kills all spawned background processes, then the parent process itself
+
+### Library
+
 * Functions, examples:
   * `(run-commands (list "sleep 60" "sleep 60"))`, run commands from the list in background
   * `(list-pids)`, lists all, if any, pids of running background processes
